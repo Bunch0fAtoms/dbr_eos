@@ -1,4 +1,7 @@
-dashboards:
-  DBR_Monitor_Dashboard:
-    name: DBR Monitor Dashboard
-    file: DBR_Monitor_Dashboard.lvdash.json
+resources:
+  dashboards:
+    DBR_Monitor_Dashboard:
+      display_name: "DBR Monitor Dashboard"
+      file_path: "DBR Days Until End Of Support Dashboard.lvdash.json"
+
+
