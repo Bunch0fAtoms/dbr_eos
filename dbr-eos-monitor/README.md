@@ -8,10 +8,10 @@ This bundle creates:
 ## How to Use
 
 ## Quickstart (Workspace UI)
-1. In your Databricks workspace, go to **Repos → Add Repo** and paste this Git URL.
-2. Open the repo and click the **DABS** badge in the top bar.
-3. Select target **dev** and click **Deploy**.
-4. After deploy, open the created Dashboard (DBR Days Until End Of Support Dashboard) and the Job (DBR Monitor Refresh).
+1. In your Databricks workspace, go to **Create → Git Folder** and paste this Git URL (https://github.com/Bunch0fAtoms/dbr_eos.git).
+2. Click **"Open in asset bundle editor"**.
+4. Click in the top right, **"deploy bundle"**.
+5. After deployment, open the created Dashboard (DBR Days Until End Of Support Dashboard) and the Job (DBR Monitor Refresh).
 
 ## Quickstart (CLI)
 ```bash
