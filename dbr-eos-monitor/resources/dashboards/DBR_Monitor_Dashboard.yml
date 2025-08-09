@@ -3,5 +3,4 @@ resources:
     DBR_Monitor_Dashboard:
       display_name: "DBR Monitor Dashboard"
       file_path: "DBR Days Until End Of Support Dashboard.lvdash.json"
-
-
+      warehouse_id: ${resources.sql_warehouses.dbr_monitor_wh.id}
