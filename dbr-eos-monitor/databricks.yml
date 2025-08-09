@@ -25,7 +25,7 @@ variables:
     default: "lookup"
   wn_table:
     description: "UC tablename for DBR_Lookup_Table"
-    default: "dbr_lookup"
+    default: "dbr_version"
 
 targets:
   # Works in the Workspace UI without edits; host omitted so UI uses the current workspace

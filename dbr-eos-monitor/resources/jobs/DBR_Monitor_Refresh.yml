@@ -5,6 +5,10 @@ resources:
       description: >
         Refreshes DBR lookup table to get updated runtimes and end-of-support dates.
         Refreshes DBR Monitor Dashboard which reports on cluster DBR and days till end-of-support.
+      schedule:
+        quartz_cron_expression: "0 0 6 * * ?"   # 6:00 AM every day
+        timezone_id: "America/New_York"         # adjust to your timezone
+        pause_status: UNPAUSED
       tasks:
         - task_key: Refresh_DBR_Lookup_Table
           notebook_task:
