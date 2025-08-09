@@ -10,17 +10,16 @@ resources:
           notebook_task:
             notebook_path: DBR_Lookup_Table.ipynb
             base_parameters:
-              wn_catalog: ${wn_catalog}
-              wn_schema: ${wn_schema}
-              wn_table: ${wn_table}
+              wn_catalog: ${var.wn_catalog}
+              wn_schema: ${var.wn_schema}
+              wn_table: ${var.wn_table}
             source: GIT
           environment_key: Default
         - task_key: Refresh_DBR_Monitor_Dashboard
           depends_on:
             - task_key: Refresh_DBR_Lookup_Table
           dashboard_task:
-            subscription: {}
-            dashboard_id: ${{ resources.dashboards.DBR_Monitor_Dashboard.id }}
+            dashboard_id: ${resources.dashboards.DBR_Monitor_Dashboard.id}
       parameters:
         - name: wn_catalog
           default: dbdemos

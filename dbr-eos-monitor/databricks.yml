@@ -17,6 +17,15 @@ variables:
   run_as_user:
     description: "User or SPN for prod run_as"
     default: ""
+  wn_catalog:
+    description: "UC catalog for DBR_Lookup_Table"
+    default: "dbdemos"
+  wn_schema:
+    description: "UC schema for DBR_Lookup_Table"
+    default: "lookup"
+  wn_table:
+    description: "UC tablename for DBR_Lookup_Table"
+    default: "dbr_lookup"
 
 targets:
   # Works in the Workspace UI without edits; host omitted so UI uses the current workspace
@@ -25,7 +34,7 @@ targets:
     default: true
     workspace:
       # Use a safe deterministic root to avoid unresolved vars
-      root_path: "~/.bundle/${bundle.name}/${target.name}"
+      root_path: "~/.bundle/${bundle.name}/dev"
     # run_as optional in dev (defaults to deployer)
 
   # Parameterized target for CI/CD or cross-workspace deploys
