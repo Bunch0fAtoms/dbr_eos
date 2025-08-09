@@ -1918,10 +1918,12 @@
             "name": "4f24af61",
             "multilineTextboxSpec": {
               "lines": [
-                "# DBR Days Until End Of Service — Jobs\n",
+                "# DBR Days Until End Of Support — Jobs\n",
                 "\n",
                 "This view analyzes **scheduled and production Jobs** over the past 30 days to identify clusters impacted by Databricks Runtime (DBR) **deprecations or end-of-support timelines**.\n",
                 "\n",
+                "We recommend upgrading all job clusters running DBR that are nearing or past the end of service to serverless.\n",
+                "Serverless clusters automatically manage DBR for you, ensuring they are supported.\n",
                 "\n",
                 "Data is sourced from:\n",
                 "- `system.compute.clusters`\n",
@@ -2792,9 +2794,12 @@
             "name": "fcaba801",
             "multilineTextboxSpec": {
               "lines": [
-                "# DBR Days Until End Of Service — All-Purpose Clusters\n",
+                "# DBR Days Until End Of Support — All-Purpose Clusters\n",
                 "\n",
                 "This view analyzes **All-Purpose compute usage** over the past 30 days to identify clusters impacted by Databricks Runtime (DBR) **deprecations or end-of-support timelines**.\n",
+                "\n",
+                "We recommend upgrading all clusters running DBR that are nearing or past the end of service to serverless.\n",
+                "Serverless clusters automatically manage DBR for you, ensuring they are supported.\n",
                 "\n",
                 "Data is sourced from:\n",
                 "- `system.compute.clusters`\n",
