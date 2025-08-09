@@ -1,4 +1,4 @@
-# Databricks Runtime EOL Monitor - Asset Bundle
+# Databricks Runtime EOS Monitor - Asset Bundle
 Monitor and alert on DBR at or nearing end of service.
 
 This bundle creates:
