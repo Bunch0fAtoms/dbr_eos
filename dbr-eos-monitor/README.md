@@ -7,5 +7,15 @@ This bundle creates:
 
 ## How to Use
 
-1. **Clone the repository:**
+## Quickstart (Workspace UI)
+1. In your Databricks workspace, go to **Repos → Add Repo** and paste this Git URL.
+2. Open the repo and click the **DABS** badge in the top bar.
+3. Select target **dev** and click **Deploy**.
+4. After deploy, open the created Dashboard (DBR Days Until End Of Support Dashboard) and the Job (DBR Monitor Refresh).
+
+## Quickstart (CLI)
+```bash
+# Use your workspace profile
+databricks bundle validate -t dev
+databricks bundle deploy -t dev
 
