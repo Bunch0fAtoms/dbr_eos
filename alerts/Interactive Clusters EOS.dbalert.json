@@ -12,6 +12,7 @@
         "double_value": 0.0
       }
     },
+    "empty_result_state": "OK",
     "notification": {
       "retrigger_seconds": 1,
       "notify_on_ok": false
@@ -98,7 +99,7 @@
   ],
   "custom_description_lines": [
     "Alert \"{{ALERT_NAME}}\" changed status to {{ALERT_STATUS}}.<br>",
-    "We recommend upgrading all job clusters running DBR that are nearing or past the end of service to serverless. <br>",
+    "We recommend upgrading all clusters running DBR that are nearing or past the end of service to serverless. <br>",
     "Serverless clusters automatically manage DBR for you, ensuring they are supported.<br>",
     "Query result value: {{QUERY_RESULT_VALUE}}<br>",
     "<a href=\"{{ALERT_URL}}\">Go to alert</a> | ",
