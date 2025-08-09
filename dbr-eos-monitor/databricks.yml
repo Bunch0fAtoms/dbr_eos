@@ -1,4 +1,3 @@
-# Databricks Asset Bundle configuration, more info here: https://docs.databricks.com/en/dev-tools/bundles/settings.html
 bundle:
   name: "dbr-eos-monitor"
 
@@ -6,22 +5,25 @@ include:
   - resources/*.yml
   - resources/*/*.yml
 
+# Global parameters for portability — users can override via CLI or env variables
+parameters:
+  workspace_host: ""        # leave empty to use CLI profile host, or override
+  root_path_base: ""        # e.g., /Users/<username>@<domain.com> if you want custom prod path
+  run_as_user: ""           # optional: email or service principal for prod jobs
+
 targets:
-  # The 'dev' target, for development purposes. This target is the default.
+  # Development target - defaults to CLI profile workspace if host is empty
   dev:
     mode: development
     default: true
     workspace:
-      host: https://e2-demo-field-eng.cloud.databricks.com
+      host: ${workspace_host}
 
-  # The 'prod' target, used for production deployment.
+  # Production target - paths and run_as can be overridden
   prod:
     mode: production
     workspace:
-      host: https://e2-demo-field-eng.cloud.databricks.com
-      # We always use /Users/morgan.williams@databricks.com for all resources to make sure we only have a single copy.
-      root_path: /Users/morgan.williams@databricks.com/.bundle/${bundle.name}/${bundle.target}
+      host: ${workspace_host}
+      root_path: ${root_path_base}/.bundle/${bundle.name}/${bundle.target}
     run_as:
-      # This runs as morgan.williams@databricks.com in production. We could also use a service principal here,
-      # see https://docs.databricks.com/dev-tools/bundles/permissions.html.
-      user_name: morgan.williams@databricks.com
+      user_name: ${run_as_user}

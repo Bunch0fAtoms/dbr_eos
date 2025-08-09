@@ -1,0 +1,4 @@
+dashboards:
+  DBR_Monitor_Dashboard:
+    name: DBR Monitor Dashboard
+    file: DBR_Monitor_Dashboard.lvdash.json
