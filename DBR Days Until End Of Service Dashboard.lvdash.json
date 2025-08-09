@@ -1918,7 +1918,7 @@
             "name": "4f24af61",
             "multilineTextboxSpec": {
               "lines": [
-                "# Databricks Runtime Deprecation Impact — Jobs\n",
+                "# DBR Days Until End Of Service — Jobs\n",
                 "\n",
                 "This view analyzes **scheduled and production Jobs** over the past 30 days to identify clusters impacted by Databricks Runtime (DBR) **deprecations or end-of-support timelines**.\n",
                 "\n",
@@ -2792,7 +2792,7 @@
             "name": "fcaba801",
             "multilineTextboxSpec": {
               "lines": [
-                "# Databricks Runtime Deprecation Impact — All-Purpose Clusters\n",
+                "# DBR Days Until End Of Service — All-Purpose Clusters\n",
                 "\n",
                 "This view analyzes **All-Purpose compute usage** over the past 30 days to identify clusters impacted by Databricks Runtime (DBR) **deprecations or end-of-support timelines**.\n",
                 "\n",
