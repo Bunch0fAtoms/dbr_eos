@@ -13,7 +13,7 @@ resources:
               wn_catalog: ${var.wn_catalog}
               wn_schema: ${var.wn_schema}
               wn_table: ${var.wn_table}
-            source: GIT
+            #source: WORKSPACE
           environment_key: Default
         - task_key: Refresh_DBR_Monitor_Dashboard
           depends_on:
