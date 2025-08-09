@@ -20,7 +20,7 @@ The **`dbr-eos-monitor-dabs/`** folder contains a [Databricks Asset Bundle](http
 2. In your Databricks workspace, go to **Create → Git Folder** and paste this Git URL (https://github.com/Bunch0fAtoms/dbr_eos.git).
 3. Click **"Open in asset bundle editor"**.
 4. Click in the top right, **"deploy bundle"**.
-5. After deployment, open the created Dashboard (DBR Days Until End Of Support Dashboard) and the Job (DBR Monitor Refresh).
+5. After deployment, open the created Dashboard (DBR Monitor Dashboard) and the Job (DBR Monitor Refresh).
 
 ---
 
